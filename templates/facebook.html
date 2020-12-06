@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>facebook_tutorial</title>
+{% endblock %}
+
+
+{% block content %} 
+    <a
+      href="https://www.facebook.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="top.png" class="facebook-logo" />
+    </a>
+
+    <div>
+      <button id="play">Play</button>
+      <button id="pause">Pause</button>
+      <button id="stop">Stop</button>
+    </div>
+
+    <h1 class="test">Contents</h1>
+    <h3 class="test">Creating Your Facebook Account</h3>
+    <h3 class="test">Learning Facebook Vocabulary</h3>
+    <h3 class="test">Getting Started With Your New Account</h3>
+    <h3 class="test">Adjusting Some Settings</h3>
+    <h3 class="test">How to Use Different Features</h3>
+
+    <h2 class="test">Creating Your Facebook Account</h2>
+
+    <p class="first">
+      To create a
+      <a href="https://www.facebook.com/">Facebook</a>
+      account you need an email
+    </p>
+
+    <h2>Learning Facebook vocabulary</h2>
+
+    <p class="first">
+      Before getting started in Facebook we have to learn a few key terms:
+    </p>
+
+    <p class="first">
+      Like: A like is a way to demonstrate appreciation for a post by clicking a
+      heart icon. The person who made the post will see that you liked
+    </p>
+
+    <p class="first">Comment: Below a post there is</p>
+
+    <p class="first">Friend</p>
+
+    <p class="first">Timeline: Your timeline on Facebook</p>
+
+    <p class="first">
+      Notification: A notification is an alert which Facebook tells you whenever
+      another user interacts with you, whether through giving you a ‘like’
+      sending you a message or many other things on the site
+    </p>
+
+    <p class="first">
+      Stories: Stories on Facebook are temporary pictures you can upload that
+      all your friends can see for 24 hours. For example, if you visit the beach
+      and take a nice picture you can upload it to your Facebook story and all
+      your friends will be able to see it for 24 hours.
+    </p>
+
+    <p class="first">Group: A Facebook group</p>
+
+    <p class="first">
+      Messenger: Messenger is how you chat with your friends on Facebook. It is
+    </p>
+
+    <h2>Getting Started With Your New Account</h2>
+
+    <p class="first">
+      Opening up Facebook for the first time might be a bit overwhelming, but
+      don’t worry we’re here to guide you…
+    </p>
+
+    <img src="first.png" id="first-image" />
+
+    <p class="first">
+      Here we see the main part of Facebook. At the top we see a list of stories
+      from your Facebook friends, under that we have a text box where you can
+      write what's on your mind and post it to your timeline
+    </p>
+
+    <img src="second.png" id="second-image" />
+
+    <p class="first">
+      On the left hand side of the screen we see eight buttons that we can
+      press. For this beginner’s guide we will be focusing only on some of these
+      sections, namely Facebook Groups, and Facebook Friends.
+    </p>
+
+    <img src="third.png" id="second-image" />
+
+    <p class="first">
+      In the top right corner of the screen we see these four buttons. From
+      right to left, the big + is the ‘Create’ tab, the speech bubble is the
+      ‘Messenger’ tab, the bell icon is the ‘notification’ tab, and the arrow
+      pointing downwards is the ‘Account settings’ tab.
+    </p>
+
+    <p class="first">
+      Create: Create will allow you to make a post on your timeline, add
+      something to your story, and create a new Facebook group.
+    </p>
+
+    <h2>Adjusting some settings</h2>
+
+    <p class="first">Some important settings</p>
+
+    <h2>How to use different features</h2>
+
+    <p class="first">- Your timeline</p>
+    <p class="first">- Chat with messenger</p>
+    <p class="first">- Facebook groups</p>
+    <p class="first">- Facebook marketplace</p>
+    <p class="first">- Videos, events, etc</p>
+
+    <p class="first">Sending a New Message Roughdraft:</p>
+
+    <p class="first">
+      In the lower right hand corner, there is a circle icon with a pencil. This
+      button opens a box that says “New message” and displays your list of
+      friends. We can scroll and choose someone from this list to chat with.
+      Select the person you would like to talk to and a text box will appear
+      along the bottom of the screen. Once we have typed the desired message, we
+      can hit the paper airplane icon to send the message! Now, when we check
+      Facebook again later, hopefully they will have sent a message back.
+    </p>
+
+    <p class="first">Facebook Groups:</p>
+
+    <h2>Privacy in Facebook:</h2>
+
+    <img src="fourth.png" id="second-image" />
+
+    <p class="first">Facebook has a few different layers of privacy</p>
+
+    <h3>
+      Congratulations!! You are now well on your way to becoming an expert
+      Facebook user. If you ever feel confused, don’t worry, you can always come
+      back to this website and read through our guide.
+    </h3>
+
+    <p class="first">
+      If you feel like you need a little extra help, feel free to chat with an
+      expert by clicking on the green chat icon.
+    </p>
+
+    <form id="your-email">
+      <p class="first">
+        You can let your friends know you are on these platforms by sending them
+        an email!
+      </p>
+      <input type="text" placeholder="email" id="email" />
+      <button type="button" onclick="myJsFunction()" id="btn" class="submit">
+        Submit
+      </button>
+    </form>
+    <script src="../static/script.js"></script>
+
+{% endblock %}

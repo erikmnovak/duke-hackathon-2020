@@ -24,6 +24,10 @@ def suggestion():
     third = request.values.get('third')
     return render_template("social-media-suggestions.html", first=first, second=second, third=third)
 
+@app.route("/<social_media_name>")
+def tutorial(social_media_name):
+    return render_template(social_media_name + ".html")
+
 @app.route("/survey", methods=['GET', 'POST'])
 def survey():
     form = Survey()
