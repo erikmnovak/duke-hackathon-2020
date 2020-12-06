@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Recommending social media options for you!</h1>
+    <article>
+    <h6>There are hundreds of different social media out there and you might be having a hard time choosing which one is the best for you. To help you out, we present to you a short survey where you answer a few questions about what you want in an ideal social media and we’ll match you to the three social media platforms which we think will suit you best. If you don’t like your results, feel free to take the survey as many times as you want!<h6><br>
+    </article>
+    <hr/>
+    <!-- The survey form -->
+    <div>
+        <label><h3 style="margin:auto">Survey for Suggestions</h3></label><br>
+        <h4 style="margin:auto">Rate the importance of the following statements</h3>
+        <hr/>
+    </div>
+    <div>
+        <form method="POST" action="">
+            {{ form.csrf_token }}
+            <fieldset>
+                <div class="row">
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="margin:auto">{{ form.family.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.family(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="margin:auto">{{ form.pictures.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.pictures(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="margin:auto">{{ form.videos.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.videos(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="text-align:center">{{ form.world_communities.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.world_communities(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="text-align:center">{{ form.varied_communities.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.varied_communities(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="text-align:center">{{ form.news.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.news(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="margin:auto">{{ form.celebrities.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.celebrities(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row px-5">
+                            <h5 style="text-align:center">{{ form.long_form.label()}}</h5>
+                        </div>
+                        <div class="row px-5">
+                            <h6 style="margin:auto">{{ form.long_form(autocomplete="off") }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btw btw-outline-info") }}
+        </form>
+    </div>
+{% endblock content %}
