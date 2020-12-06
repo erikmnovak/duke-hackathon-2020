@@ -1,0 +1,95 @@
+
+{% extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>insta_tutorial</title>
+{% endblock %}
+
+{% block head %} 
+      <a
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="insta.png" class="facebook-logo" />
+      </a>
+    <div>
+      <button id="play">Play</button>
+      <button id="pause">Pause</button>
+      <button id="stop">Stop</button>
+    </div>
+
+    <h1 class="test">Contents</h1>
+    <h3 class="test">What is Instagram</h3>
+    <h3 class="test">Creating an Instagram account</h3>
+    <h3 class="test">Learning Instagram vocabulary</h3>
+    <h3 class="test">Getting started with your new account</h3>
+    <h3 class="test">Adjusting some things in your profile</h3>
+    <h3 class="test">How to use different features</h3>
+    <h3 class="test">Privacy on Instagram</h3>
+
+    <h2 class="test">What is Instagram</h2>
+    <p class="first">
+      Instagram is an app and a website where people from around the world can
+      upload pictures or short videos of anything. It was launched in 2010 and
+      is used to keep up with your family, friends, celebrities, and anybody
+      else who you desire. Your answers to the survey reveal to us that it's a
+      good fit for you!
+    </p>
+
+    <h2>Creating an Instagram account</h2>
+    <img src="1.png" id="second-image" />
+    <p class="first">
+      Greeted with this start page, you’ll want to either click on the ‘Sign up’
+      button at the bottom or, if you already have a Facebook account, click on
+      the ‘Log in with Facebook’ button in the middle.
+    </p>
+    <img src="2.png" id="second-image" />
+    <p class="first">
+      You’ll want to fill in the boxes shown above. In the “Mobile number or
+      email” box you can choose whether to input your mobile number or your
+      email. Next up you can fill out your full name. For the ‘Username’ box you
+      will be choosing what you want people to identify you with on instagram,
+      we recommend your username being just your last name and your first name.
+      Then you can choose a password. Make sure the password is something you
+      can remember, but not something that is too easy to guess. Once you’re
+      done, click the big green ‘sign up’ button and you'll officially have an
+      Instagram account!
+    </p>
+    <h2>Learning Instagram vocabulary</h2>
+    <p class="first">Learn it up</p>
+    <h2>Getting started with your new account</h2>
+    <img src="3.png" id="second-image" />
+    <p class="first">
+      At the top right of the screen you’ll see the main buttons of Instagram.
+      Clicking on the little home icon returns you to the main page where you
+      can see your feed. The arrow icon will bring you to your direct messages,
+      the compass icon takes you to your Instagram explore page, and the heart
+      icon will take you to a summary of the activity on your account. The final
+      circle on the right will be your profile and the image in the circle will
+      look different for every Instagram user.
+    </p>
+    <h2>Adjusting some things in your profile</h2>
+    <p class="first">Adjust it all</p>
+    <h2>How to use different features</h2>
+    <p class="first">Stories, posts, DMs, explore</p>
+    <h2>Privacy on Instagram</h2>
+    <p class="first">There are two layers of privacy on Instagram</p>
+    <h3>
+      Congratulations!! You are now well on your way to becoming an expert
+      Instagram user. If you ever feel confused, don’t worry, you can always
+      come back to this website and read through our guide.
+    </h3>
+    <form id="your-email">
+      <p class="first">
+        You can let your friends know you are on these platforms by sending them
+        an email!
+      </p>
+      <input type="text" placeholder="email" id="email" />
+      <button type="button" onclick="myJsFunction()" id="btn" class="submit">
+        Submit
+      </button>
+    </form>
+    <script src="script.js"></script>
+{% endblock %} 

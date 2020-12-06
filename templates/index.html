@@ -1,5 +1,42 @@
-{% extends 'base.html' %}
+<!doctype HTML>
+<html lang="en">
+<head>
+    <title>GRAM-PAL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hdukep1.css') }}" />
+    <meta charset="utf-8"/> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
 
-{% block content %}
-<img src="C:\Users\erikm\cs\side-projects\duke-hackathon-2020\templates\twitter-logo.png">
-{% endblock content %}
+<body>
+    <script type="text/javascript" src="/../static/hdukep1.js"></script>
+    <div class="buttons">
+        <button id=play></button>
+        <button id=pause></button>
+        <button id=stop></button>
+    </div>
+    <img src="Gram Delivery.svg" alt="our logo">
+    <table>
+        <tr>
+            <th class="grey">
+                
+                <h1>Who We Are...</h1>
+                <p>We are a team of college students</p>
+                <p>who are passionate about technology and education!</p> 
+              
+                <h1>What We Do...</h1>
+                <p>We chose to pursue this topic because we believe it is important for the older generation</p>
+                <p>to be able to connect and interact with their loved ones and the general outside world.</p> 
+                <p>We are able to do this by using a carefully adjusted algorithm which allows us</p> 
+                <p>to match the user with three social media platforms that best fit their needs.</p>
+                <div class="orange">
+                    <a href={{ url_for('survey') }}>SURVEY</a>
+                </div>
+            </th>
+            <th class="green">
+                <h1 id="larger">Chat Box</h1>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,123 @@
+header
+{
+  text-align: center;
+  background-color: #0dc8f1;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 125px;
+  line-height: 211px;
+  margin: 60px 68px;
+  border-radius: 25px;
+}
+img
+{
+  width: 100%;
+}
+table
+{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Roboto Condensed;
+  border-spacing: 50px;
+  border-collapse: separate;
+  font-size: 20px;
+}
+a
+{
+  font-size: 40px;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #beffb4;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color:  #c4c4c4;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+th
+{
+  border-radius: 25px;
+  border: 1px solid;
+  padding: 10px;
+}
+.grey
+{
+  background-color: #c4c4c4;
+  border-color: #c4c4c4;
+}
+.green
+{
+  background-color: #beffb4;
+  border-color: #beffb4;
+}
+.orange
+{
+  background-color: #e88108;
+  border-color: #e88108;
+  color: white;
+}
+div
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  padding: 5px;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  outline: none;
+  padding: 0;
+  width: 48px;
+}
+
+#play {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+}
+
+#play.played {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+}
+
+#pause {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+}
+
+#pause.paused {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+}
+
+#stop {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+}
+
+#stop.stopped {
+  background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+}
+.buttons {
+  margin-top: 25px;
+}
+#larger
+{
+  width: 500px;
+}
+p
+{
+  font-size: xx-large;
+}
